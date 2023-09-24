@@ -6,7 +6,7 @@ $(document).ready(function(){
     var logPlus = 1;
     var logPrice = 1;
     var menu;
-    var autochopperInterval;
+    var autochopperInterval = 1000; // milliseks
 
 
     $("#chop").click(function(){
@@ -92,4 +92,19 @@ $(document).ready(function(){
         $("." + menu).css("display", "block");
         return menu;
     }
+
+    const toggle = $("#toggle input");
+    let intervalId = null;
+
+    toggle.on("change", function() {
+        if (toggle.is(":checked")) {
+            intervalId = setInterval(function() {
+                logs += logPlus;
+                changeInventory();
+                changeMarket();
+            }, autochopperInterval);
+        } else {
+            clearInterval(intervalId);
+        }
+    });
 });
