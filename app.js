@@ -6,7 +6,7 @@ $(document).ready(function(){
     var logPlus = 1;
     var logPrice = 1;
     var menu;
-    var autochopper = false;
+    var autochopperInterval;
 
 
     $("#chop").click(function(){
@@ -91,21 +91,5 @@ $(document).ready(function(){
         $(".menus").children().css("display", "none");
         $("." + menu).css("display", "block");
         return menu;
-    }
-
-    $("#autoChoppertoggel").click(function() {
-        autochopper = !autochopper; // Toggle the autochopper flag
-        if (autochopper) {
-            autoChopperLoop(); // Start the loop
-        }
-    });
-    
-    function autoChopperLoop() {
-        if (autochopper) {
-            logs += logPlus;
-            changeInventory();
-            changeMarket();
-            setTimeout(autoChopperLoop, 1000); // Repeat the loop after 1 second (1000 milliseconds)
-        }
     }
 });
