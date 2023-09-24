@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    background-color: #8ecae6;
+    font-family: 'Space Mono', monospace;
+}
+
+.log {
+    height: 300px;
+    width: 200px;
+    padding: 95px;
+}
+
+.textcenter{
+    margin-left: 120px;
+}
+
+.logcenter {
+
+    height: 77vh;
+    display: block;
+    border: 1px solid rgb(0, 0, 0);
+    width: 45%;
+    margin-top: 11px;
+}
+
+.navbar {
+    margin-top: 10px;
+    height: 3vh;
+    border: 1px solid rgb(0, 0, 0);
+    margin: 10px;
+}
+
 .titel {
     border: 1px solid rgb(0, 0, 0);
     width: 40%;
@@ -15,15 +49,18 @@
 
 .marketplace{
     float: right;
-    display: none;
 }
 
 .center {
-    float: right;
-    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
     border: 1px solid rgb(0, 0, 0);
     padding: 10px;
-    height: 75%;
+    height: 75vh;
+    margin-bottom: 10px;
+    margin-top: 50px;
 }
 
 .sellButtons{
@@ -50,6 +87,7 @@ button{
     display: inline-block;
     width: 3.5em;
     height: 2em;
+    margin-left: 160px;
 }
   
 .switch input {
