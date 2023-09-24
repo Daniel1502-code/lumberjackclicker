@@ -7,25 +7,31 @@
 </head>
 <body>
     <div class="content">
-        <div class="titel">
-            <h1>
-                Lumberjack Idle Game!
-            </h1>
+
+        <div class="navbar">
+            <p style="margin-top: auto; margin-left: 10px;">Lumber Jack Idle!</p> 
         </div>
 
-        <div class="menus">
-            <div class="main center">
-                <button id="chop">Chop Log</button>
-                <button id="visit">Visit Marketplace</button>
-                <!-- <button id="mineStone">Mine For Stone</button> -->
-                <p>
+
+        <div class="logcenter">
+            <img id="chop" class="log" src="log.png" alt="">
+
+            <div>
+
+                <p class="textcenter">
                     Auto Chop Log!
                 </p>
+
                 <label id="toggle" class="switch">
                     <input type="checkbox">
                     <span class="slider"></span>
-                </label>
+                </label>  
+
             </div>
+
+        </div>
+
+        <div class="menus">
 
             <div class="marketplace center">
 
@@ -36,10 +42,9 @@
                 </div>
 
                 <div class="upgrades">
-                    <button id="autoChopper">Buy [1] Auto Chopper ($100)</button>
+                    <button id="chopperMultiplier">Buy [1] Chopper Multiplier ($100)</button>
                 </div>
 
-                <button id="return">Return</button>
             </div>
             
         </div>
