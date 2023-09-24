@@ -36,6 +36,13 @@ $(document).ready(function(){
         changeMarket();
     });
 
+    $("#chopperMultiplier").click(function(){
+        money -= 100;
+        logPlus += 1;
+        changeInventory();
+        changeMarket();
+    });
+
 
     $("#visit").click(function(){
         menu = switchMenu("marketplace");
@@ -54,18 +61,6 @@ $(document).ready(function(){
             $("#logs").html("You now own " + logs + " log.");
         }else{
             $("#logs").html("You now own " + logs + " logs.");
-        }
-
-        if(stone > 0){
-            $("#stone").html("You now own " + stone + " piece(s) of stone.");
-        }else{
-            $("#stone").html("");
-        }
-
-        if(pickaxes > 0){
-            $("#pickaxes").html("You now own " + pickaxes + " pickaxe(s).");
-        }else{
-            $("#pickaxes").html("");
         }
     }
 
