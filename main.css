@@ -1,0 +1,97 @@
+.titel {
+    border: 1px solid rgb(0, 0, 0);
+    width: 40%;
+    float: left;
+}
+
+.inventory{
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    border: 1px solid rgb(0,0,0);
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.marketplace{
+    float: right;
+    display: none;
+}
+
+.center {
+    float: right;
+    width: 30%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    height: 75%;
+}
+
+.sellButtons{
+    display: grid;
+    grid-template-columns: repeat(3, 72px);
+    margin-bottom: 10px;
+}
+
+.upgrades, .items button{
+    display: grid;
+    grid-template-columns: repeat(1, 96px);
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: white;
+    font-size: 18px;
+}
+
+
+.switch {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+  
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+  
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(182, 182, 182);
+    transition: .4s;
+    border-radius: 10px;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 8px;
+    left: 0.3em;
+    bottom: 0.3em;
+    transform: rotate(270deg);
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+}
+  
+.switch input:checked + .slider {
+    background-color: #21cc4c;
+}
+  
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+  
+.switch input:checked + .slider:before {
+    transform: translateX(1.5em);
+}
+
